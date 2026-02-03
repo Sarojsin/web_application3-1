@@ -1,0 +1,53 @@
+/* 1. The Main Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100%;           
+  background-color: #f8f9fa; /* Light Grey */
+  border-right: 1px solid #d1d5db; /*Separator line on the right*/
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+
+}
+
+
+/* 2. The Menu Container */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column; /* Stacks the buttons vertically */
+  gap: 10px;              /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* 3. Styling the Items (.overview and .details) */
+/* I am selecting both classes here to give them the same look */
+.menuitem {
+  display: flex;           /* Makes content inside horizontal */
+  align-items: center;     /* Centers text vertically */
+  padding: 12px 15px;      /* Spacing inside the button */
+  
+  color: #080809;          /* Dark Grey text */
+  font-size: 16px;
+  font-weight: 500;
+  
+  cursor: pointer;         /* Hand icon on hover */
+  border-radius: 6px;      /* Rounded corners */
+  transition: all 0.2s ease; /* Smooth hover animation */
+}
+
+/* 4. Hover Effect */
+.menuitem:hover {
+  background-color: #e5e7eb ; /* Darker grey background */
+  color: #000000;            /* Pitch black text */
+  padding-left: 20px;        /* Optional: Slides text slightly right on hover */
+}
+
+.menuitem.active{
+  background-color: #e5e7eb ; /* Darker grey background */
+  color: #000000;            /* Pitch black text */
+  padding-left: 20px;        /* Optional: Slides text slightly right on hover */
+  
+}
+/* 5. ACTIVE STATE (The Highlight) */
+/* This class is added by React when selected */

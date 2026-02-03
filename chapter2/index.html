@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+     <script >        
+  <h3>Type a message and press ENTER:</h3>
+  <input type="text" id="msgInput" placeholder="Type here...">
+  <p id="output"></p>
+        
+        
+        
+        const input = document.getElementById("msgInput");
+        const display = document.getElementById("output");
+
+        // Listen for the key going DOWN inside the input box
+        input.addEventListener("keydown", function(e) {
+            
+            // CHECK: Was the specific key "Enter"?
+            if (e.key === "Enter") {
+                
+                // ACTION: Update the UI    
+                display.innerText = "Sent: " + input.value;
+                display.style.color = "green";
+                
+                // Optional: Clear the input box
+                input.value = "";
+            }<button class="click_me">click</button></script>
+</body>
+</html>

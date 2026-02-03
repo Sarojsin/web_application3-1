@@ -1,0 +1,16 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.content-wrapper {
+
+  margin-left: 250px;      /* Pushes everything right to avoid the Fixed Sidebar */
+  width: calc(100% - 250px); /* Adjusts width so it doesn't overflow */
+  height: 100%;           /* Forces the layout to be exactly screen height */                
+  padding: 30px;           
+
+}

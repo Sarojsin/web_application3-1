@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.comp_name{
+    font-size: 25px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.nav{
+    background-color: brown;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 15px;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 20px;
+}

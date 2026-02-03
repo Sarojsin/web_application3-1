@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.comp_name{
+    font-size: 25px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.nav{
+    background-color: brown;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 20px;
+}
+.home-intro{
+    color: black;
+}
+.home-intro h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 20px;
+}
+.home-intro p{
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 15px;
+}
+
+#details{
+    padding: 20px;
+    font-size: 20px;
+}
+#ani{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+    animation: animate 3s infinite alternate;
+    overflow: hidden;
+}
+#ani p {
+    color:black;
+    animation: moveText 12s infinite alternate;
+}
+
+@keyframes animate{
+ from{background-color: brown;}
+ to{background-color:pink;}
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#copyright{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    background-color: brown;
+    color: white;
+
+}
+.data{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#skill_data{
+    margin: 20px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    rotate: 360deg;
+
+
+}
+#skill_data :hover{
+    background-color:blue;
+    border: 3px solid blue;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
