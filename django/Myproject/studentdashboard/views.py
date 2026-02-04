@@ -1,6 +1,19 @@
-from django.shortcuts import render
-
-# Create your views here.
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
-def home(request):
-    return HttpResponse("<h1>Welcome to the Student Dashboard by saroj singh dhami. </h1>")
+from .models import StudentProfile
+from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required  # <--- THE FIX
+
+
+from django.contrib import messages
+
+
+def student_dashboard(request):
+    # Fetch all students and their related grades
+    students = StudentProfile.objects.prefetch_related('grades').all()
+    
+    context = {
+        'students': students,
+        'student_count': students.count(),
+    }
+    return render(request, 'dashboard.html', context)
