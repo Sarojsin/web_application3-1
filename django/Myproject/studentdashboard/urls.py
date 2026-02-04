@@ -5,4 +5,5 @@ app_name = 'studentdashboard'
 
 urlpatterns = [
     path('', views.home, name='home'),
+    
 ]
