@@ -100,6 +100,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Authentication Settings
+LOGIN_URL = 'studentdashboard:login'              # The 'name' of your login path in urls.py
+LOGIN_REDIRECT_URL = 'studentdashboard:student_dashboard'  # Redirects here after successful login
+LOGOUT_REDIRECT_URL = 'studentdashboard:login'    # Redirects here after clicking logout
+
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
